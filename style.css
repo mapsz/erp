@@ -1,0 +1,40 @@
+body {
+  font-family: Roboto;
+  letter-spacing: 0px;
+  background-color: #D9D9D999;
+}
+
+.main.menu {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #2185D0;
+}
+
+.main.menu .item {
+  color: white;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.main.menu .item.logo {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 16px; /* 66.667% */
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: grid !important;
+  place-items: center;
+}
+
+.auth.card {
+  padding: 64px;
+  width: 408px;
+}
+
+.auth-header {
+  margin-bottom: 32px !important;
+}

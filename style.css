@@ -4,17 +4,35 @@ body {
   background-color: #D9D9D999;
 }
 
+
+
+.ui.primary.button {
+  background-color: #4AA8EE;
+}
+
 .main.menu {
   border: none;
   border-radius: 0;
   box-shadow: none;
   background-color: #2185D0;
+  padding: 8px 16px;
+  height: 56px;
+}
+
+#toggleSidebarButton {
+  padding: 0;
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  align-self: center;
+}
+
+#toggleSidebarButton i {
+  margin: 0px !important;
 }
 
 .main.menu .item {
   color: white;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
 }
 
 .main.menu .item.logo {
@@ -22,6 +40,11 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 16px; /* 66.667% */
+  padding: 0 16px;
+}
+
+.main.menu .item::before {
+  width: 0px !important;
 }
 
 .auth-wrapper {
@@ -37,4 +60,8 @@ body {
 
 .auth-header {
   margin-bottom: 32px !important;
+}
+
+.sidebar-menu {
+  top: 60px !important;
 }

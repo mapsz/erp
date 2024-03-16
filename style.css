@@ -8,7 +8,18 @@ body {
   background-color: #D9D9D999;
 }
 
+.ui.button-with-icon {
+  display: flex;
+  align-items: center;
+}
+.ui.button-with-icon svg{
+  margin-right: 8px;
+}
 
+.no-padding-menu .item {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
 .ui.primary.button {
   background-color: #4AA8EE;
@@ -84,4 +95,12 @@ body {
   background-color: #A333C8;
   display: grid;
   place-items: center;
+}
+
+.sidebar.visible + .pusher {
+  width: calc(100% - 260px);
+}
+
+.main-content {
+  margin: 16px;
 }

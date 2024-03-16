@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="semantic/dist/semantic.min.js"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="ui fluid container ">
+    <div class="ui main menu">
+
+      <div class="item">
+        <button class="ui primary button toggle" id="toggleSidebarButton"><i class="bars icon"></i></button>
+        <div class="item logo">ELPISRAW</div>
+      </div>
+
+      <div class="right menu">
+        <div class="item">
+          <div class="ui right action left icon input">
+            <i class="search icon"></i>
+            <input type="text" placeholder="Search" style="border-radius: 24px 0 0 24px;">
+            <div class="ui basic floating dropdown button" style="
+              border-radius: 0 24px 24px 0;
+              margin-left: 1px;
+              background-color: #fff;
+            ">
+              <div class="text">all</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">This Organization</div>
+                <div class="item">Entire Site</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="user-avatar">
+            <span>OP</span>
+          </div>
+        </div>
+
+        <div class="item">
+          User Alex
+        </div>
+
+        <div class="item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M14.0001 21H10.0001L9.44905 18.52C8.79331 18.2636 8.18005 17.9096 7.63005 17.47L5.20605 18.233L3.20605 14.769L5.07805 13.051C4.97329 12.3549 4.97329 11.6471 5.07805 10.951L3.20605 9.232L5.20605 5.768L7.63005 6.531C8.1803 6.09097 8.7939 5.73664 9.45005 5.48L10.0001 3H14.0001L14.5511 5.48C15.2071 5.736 15.8201 6.09 16.3711 6.53L18.7941 5.767L20.7941 9.231L18.9221 10.949C19.0269 11.6451 19.0269 12.3529 18.9221 13.049L20.7941 14.767L18.7941 18.231L16.3701 17.468C15.8201 17.9082 15.2069 18.2629 14.5511 18.52L14.0011 21H14.0001Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="item" style="margin-left: 14px">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H9M19 12L15 8M19 12L15 16" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 3H7C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="ui fluid container">
+
+
+  </div>
+
+<script>
+  $('.ui.dropdown')
+    .dropdown()
+  ;
+</script>
+</body>
+</html>

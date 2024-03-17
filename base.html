@@ -175,41 +175,215 @@
           </div>
         </div>
 
-        <div class="ui secondary menu no-padding-menu">
-          <div class="right menu">
-            <div class="item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 6V18C3 18.5304 3.21071 19.0391 3.58579 19.4142C3.96086 19.7893 4.46957 20 5 20H19C19.5304 20 20.0391 19.7893 20.4142 19.4142C20.7893 19.0391 21 18.5304 21 18V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6Z" stroke="#434343" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 8H21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21 14H3" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15 8V20" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 8V20" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="ui grid">
+          <div class="eight wide column">
+            <div class="ui positive button">
+              Add new
             </div>
-
-            <div class="item">
-              <div class="ui basic floating dropdown button">
-                <div class="text">500</div>
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                  <div class="item">400</div>
-                  <div class="item">300</div>
+          </div>
+          <div class="eight wide column">
+            <!-- Table settings  TODO -->
+            <div class="ui grid">
+              <div class="six wide column">
+                <div class="ui secondary menu no-padding-menu">
+                  <div class="right menu">
+                    <div class="item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 6V18C3 18.5304 3.21071 19.0391 3.58579 19.4142C3.96086 19.7893 4.46957 20 5 20H19C19.5304 20 20.0391 19.7893 20.4142 19.4142C20.7893 19.0391 21 18.5304 21 18V6C21 5.46957 20.7893 4.96086 20.4142 4.58579C20.0391 4.21071 19.5304 4 19 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6Z" stroke="#434343" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 8H21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 14H3" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 8V20" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 8V20" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="item">
+                      <div class="ui basic floating dropdown button">
+                        <div class="text">500</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">400</div>
+                          <div class="item">300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- TODO paginator -->
+              <!-- Paginator -->
+              <div class="nine wide column" style="align-self: center;">
+                <div class="ui tiny pagination menu">
+                  <a class="item" style="padding: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                      <path d="M14 6.5L9 11L14 15.5" stroke="#1B1C1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <a class="active item">
+                    1
+                  </a>
+                  <div class="disabled item">
+                    ...
+                  </div>
+                  <a class="item">
+                    10
+                  </a>
+                  <a class="item">
+                    11
+                  </a>
+                  <a class="item">
+                    12
+                  </a>
+                  <a class="item" style="padding: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                      <path d="M10 6.5L15 11L10 15.5" stroke="#1B1C1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
 
-            <div class="item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M2.66669 13.3348L6.00002 10.0014M6.00002 10.0014L8.63735 12.6388C8.71443 12.7157 8.8092 12.7727 8.91336 12.8045C9.01753 12.8364 9.12792 12.8423 9.23488 12.8216C9.34184 12.801 9.44211 12.7544 9.52692 12.6861C9.61173 12.6177 9.67848 12.5296 9.72135 12.4294L11.2247 8.92209C11.2591 8.84153 11.3091 8.76856 11.3718 8.70736C11.4345 8.64615 11.5087 8.59792 11.59 8.56542L13.728 7.71009C13.8305 7.66925 13.9212 7.60358 13.9921 7.51899C14.0629 7.4344 14.1116 7.33354 14.1338 7.22547C14.156 7.1174 14.1511 7.0055 14.1193 6.89984C14.0876 6.79417 14.0301 6.69804 13.952 6.62009L9.38135 2.04942C9.30333 1.97151 9.20719 1.91416 9.10156 1.88252C8.99592 1.85088 8.88409 1.84594 8.77608 1.86814C8.66807 1.89034 8.56725 1.93898 8.48266 2.00971C8.39806 2.08044 8.33233 2.17105 8.29135 2.27342L7.43602 4.41142C7.40349 4.49277 7.35525 4.5669 7.29405 4.62959C7.23285 4.69227 7.15989 4.74228 7.07935 4.77676L3.57202 6.28009C3.47187 6.32296 3.38376 6.38972 3.31538 6.47452C3.24701 6.55933 3.20045 6.6596 3.1798 6.76656C3.15914 6.87352 3.16501 6.98391 3.1969 7.08808C3.22878 7.19225 3.2857 7.28701 3.36269 7.36409L6.00002 10.0014Z" stroke="#434343" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <!-- Pin -->
+              <div class="one wide column" style="display: grid; place-items: center;">
+                <div class="ui secondary menu no-padding-menu">
+                  <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M2.66669 13.3348L6.00002 10.0014M6.00002 10.0014L8.63735 12.6388C8.71443 12.7157 8.8092 12.7727 8.91336 12.8045C9.01753 12.8364 9.12792 12.8423 9.23488 12.8216C9.34184 12.801 9.44211 12.7544 9.52692 12.6861C9.61173 12.6177 9.67848 12.5296 9.72135 12.4294L11.2247 8.92209C11.2591 8.84153 11.3091 8.76856 11.3718 8.70736C11.4345 8.64615 11.5087 8.59792 11.59 8.56542L13.728 7.71009C13.8305 7.66925 13.9212 7.60358 13.9921 7.51899C14.0629 7.4344 14.1116 7.33354 14.1338 7.22547C14.156 7.1174 14.1511 7.0055 14.1193 6.89984C14.0876 6.79417 14.0301 6.69804 13.952 6.62009L9.38135 2.04942C9.30333 1.97151 9.20719 1.91416 9.10156 1.88252C8.99592 1.85088 8.88409 1.84594 8.77608 1.86814C8.66807 1.89034 8.56725 1.93898 8.48266 2.00971C8.39806 2.08044 8.33233 2.17105 8.29135 2.27342L7.43602 4.41142C7.40349 4.49277 7.35525 4.5669 7.29405 4.62959C7.23285 4.69227 7.15989 4.74228 7.07935 4.77676L3.57202 6.28009C3.47187 6.32296 3.38376 6.38972 3.31538 6.47452C3.24701 6.55933 3.20045 6.6596 3.1798 6.76656C3.15914 6.87352 3.16501 6.98391 3.1969 7.08808C3.22878 7.19225 3.2857 7.28701 3.36269 7.36409L6.00002 10.0014Z" stroke="#434343" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="ui scrolling fluid container" style="max-height: none; margin-bottom: 30px;">
+          <table class="ui celled table">
+            <thead>
+              <tr>
+                <th>Employee Name</th>
+                <th>Age</th>
+                <th>Job Title</th>
+                <th>Department</th>
+                <th>Location</th>
+                <th>Years of Experience</th>
+                <th>Education Level</th>
+                <th>Salary</th>
+                <th>Employment Status</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Supervisor</th>
+                <th>Skills</th>
+                <th>Certifications</th>
+                <th>Languages</th>
+                <th>Performance Rating</th>
+                <th>Team</th>
+                <th>Project</th>
+                <th>Hire Date</th>
+                <th>Last Review Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Employee Name">Alice Johnson</td>
+                <td data-label="Age">28</td>
+                <td data-label="Job Title">Marketing Manager</td>
+                <td data-label="Department">Marketing</td>
+                <td data-label="Location">Los Angeles</td>
+                <td data-label="Years of Experience">6</td>
+                <td data-label="Education Level">Master's Degree</td>
+                <td data-label="Salary">$85,000</td>
+                <td data-label="Employment Status">Full-Time</td>
+                <td data-label="Email">alice.johnson@example.com</td>
+                <td data-label="Phone Number">987-654-3210</td>
+                <td data-label="Supervisor">David Brown</td>
+                <td data-label="Skills">Marketing Strategy, Social Media Marketing</td>
+                <td data-label="Certifications">Google Ads Certification</td>
+                <td data-label="Languages">English</td>
+                <td data-label="Performance Rating">4.7/5</td>
+                <td data-label="Team">Marketing</td>
+                <td data-label="Project">Campaign X</td>
+                <td data-label="Hire Date">2019-03-20</td>
+                <td data-label="Last Review Date">2022-03-20</td>
+              </tr>
+              <tr>
+                <td data-label="Employee Name">Michael Brown</td>
+                <td data-label="Age">40</td>
+                <td data-label="Job Title">Sales Manager</td>
+                <td data-label="Department">Sales</td>
+                <td data-label="Location">Chicago</td>
+                <td data-label="Years of Experience">12</td>
+                <td data-label="Education Level">Bachelor's Degree</td>
+                <td data-label="Salary">$95,000</td>
+                <td data-label="Employment Status">Full-Time</td>
+                <td data-label="Email">michael.brown@example.com</td>
+                <td data-label="Phone Number">567-890-1234</td>
+                <td data-label="Supervisor">Emily Wilson</td>
+                <td data-label="Skills">Sales Management, Negotiation</td>
+                <td data-label="Certifications">Salesforce Administrator</td>
+                <td data-label="Languages">English, Spanish</td>
+                <td data-label="Performance Rating">4.9/5</td>
+                <td data-label="Team">Sales</td>
+                <td data-label="Project">Sales Campaign Y</td>
+                <td data-label="Hire Date">2010-07-10</td>
+                <td data-label="Last Review Date">2022-07-10</td>
+              </tr>
+              <tr>
+                <td data-label="Employee Name">Emily Wilson</td>
+                <td data-label="Age">45</td>
+                <td data-label="Job Title">Human Resources Director</td>
+                <td data-label="Department">Human Resources</td>
+                <td data-label="Location">San Francisco</td>
+                <td data-label="Years of Experience">18</td>
+                <td data-label="Education Level">Master's Degree</td>
+                <td data-label="Salary">$120,000</td>
+                <td data-label="Employment Status">Full-Time</td>
+                <td data-label="Email">emily.wilson@example.com</td>
+                <td data-label="Phone Number">345-678-9012</td>
+                <td data-label="Supervisor">-</td>
+                <td data-label="Skills">Human Resources Management, Employee Relations</td>
+                <td data-label="Certifications">PHR, SHRM-SCP</td>
+                <td data-label="Languages">English</td>
+                <td data-label="Performance Rating">4.8/5</td>
+                <td data-label="Team">Human Resources</td>
+                <td data-label="Project">HR Policy Update</td>
+                <td data-label="Hire Date">2005-05-15</td>
+                <td data-label="Last Review Date">2022-05-15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-
+        <!-- Paginator -->
+        <div class="ui grid">
+          <div class="column">
+            <div class="ui right floated tiny pagination menu">
+              <a class="item" style="padding: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                  <path d="M14 6.5L9 11L14 15.5" stroke="#1B1C1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="active item">
+                1
+              </a>
+              <div class="disabled item">
+                ...
+              </div>
+              <a class="item">
+                10
+              </a>
+              <a class="item">
+                11
+              </a>
+              <a class="item">
+                12
+              </a>
+              <a class="item" style="padding: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                  <path d="M10 6.5L15 11L10 15.5" stroke="#1B1C1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -1,0 +1,5 @@
+npm i
+cd node_modules/fomantic-ui
+npx gulp install
+cd ../../semantic/
+npx gulp build

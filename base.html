@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="semantic/dist/semantic.min.js"></script>
+  <script src="semantic/dist/tablesort.js"></script>
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -256,9 +257,15 @@
         </div>
 
         <div class="ui scrolling fluid container" style="max-height: none; margin-bottom: 30px;">
-          <table class="ui celled table">
+          <table class="ui sortable celled table">
             <thead>
               <tr>
+                <th>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label></label>
+                  </div>
+                </th>
                 <th>Employee Name</th>
                 <th>Age</th>
                 <th>Job Title</th>
@@ -283,6 +290,12 @@
             </thead>
             <tbody>
               <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label></label>
+                  </div>
+                </td>
                 <td data-label="Employee Name">Alice Johnson</td>
                 <td data-label="Age">28</td>
                 <td data-label="Job Title">Marketing Manager</td>
@@ -305,6 +318,12 @@
                 <td data-label="Last Review Date">2022-03-20</td>
               </tr>
               <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label></label>
+                  </div>
+                </td>
                 <td data-label="Employee Name">Michael Brown</td>
                 <td data-label="Age">40</td>
                 <td data-label="Job Title">Sales Manager</td>
@@ -327,6 +346,12 @@
                 <td data-label="Last Review Date">2022-07-10</td>
               </tr>
               <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label></label>
+                  </div>
+                </td>
                 <td data-label="Employee Name">Emily Wilson</td>
                 <td data-label="Age">45</td>
                 <td data-label="Job Title">Human Resources Director</td>
@@ -391,6 +416,8 @@
 
   <script>
     $(document).ready(() => {
+      $('table').tablesort()
+
       $('.ui.dropdown')
         .dropdown()
       ;

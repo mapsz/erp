@@ -101,6 +101,22 @@ body {
   place-items: center;
 }
 
-.sidebar.visible + .pusher {
-  width: calc(100% - 260px);
+.main-content{
+  transition: transform 0.5s ease;
+}
+
+#left-menu.hidden + .main-content {
+  transform: translateX(-250px);
+}
+
+#left-menu {
+  transition: transform 0.5s ease;
+}
+
+.hidden {
+  transform: translateX(-250px);
+}
+
+.d-flex {
+  display: flex;
 }

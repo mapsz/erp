@@ -8,6 +8,10 @@ body {
   background-color: #D9D9D999;
 }
 
+body .ui {
+  scrollbar-width: unset;
+}
+
 .ui.button-with-icon {
   display: flex;
   align-items: center;

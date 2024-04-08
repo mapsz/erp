@@ -135,3 +135,9 @@ body .ui {
 .justify-content-end {
   justify-content: end;
 }
+
+.th-sortable:hover {
+  background-color: #eee !important;
+  text-decoration: underline;
+  cursor: pointer !important;
+}

@@ -15,6 +15,7 @@ body .ui {
 .ui.button-with-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .ui.button-with-icon svg{
   margin-right: 8px;

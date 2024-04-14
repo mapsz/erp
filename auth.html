@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="semantic/dist/semantic.min.js"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="ui main menu">
+    <div class="item">
+      <div class="item logo">ELPISRAW</div>
+    </div>
+  </div>
+
+  <div class="" style="
+    min-height: calc(100% - 56px);
+    display: grid;
+    place-items: center;
+    margin-top: -20px;
+  ">
+    <div class="ui card">
+      <div class="content">
+        <div class="header"><h2>System login</h2></div>
+      </div>
+      <div class="content">
+        <form class="ui form">
+          <div class="field">
+            <label>Login</label>
+            <div class="ui left icon input">
+              <input type="text" name="login" placeholder="JohnDoe">
+              <i class="icon custom-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 19.0001C22 15.6871 18.866 13.0001 15 13.0001C14.193 13.0001 12.897 12.7081 12 11.7661" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 13C15.6684 13 16.3261 12.8324 16.9131 12.5127C17.5 12.193 17.9975 11.7313 18.3601 11.1698C18.7227 10.6083 18.9388 9.96494 18.9886 9.29841C19.0385 8.63189 18.9205 7.9635 18.6456 7.3543C18.3706 6.7451 17.9473 6.21453 17.4144 5.81105C16.8816 5.40757 16.2561 5.14404 15.5952 5.04456C14.9342 4.94507 14.2589 5.01279 13.6309 5.24154C13.0028 5.47028 12.4421 5.85275 12 6.354" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 19C16 15.686 12.866 13 9 13C5.134 13 2 15.686 2 19H16Z" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 13C10.0609 13 11.0783 12.5786 11.8284 11.8284C12.5786 11.0783 13 10.0609 13 9C13 7.93913 12.5786 6.92172 11.8284 6.17157C11.0783 5.42143 10.0609 5 9 5C7.93913 5 6.92172 5.42143 6.17157 6.17157C5.42143 6.92172 5 7.93913 5 9C5 10.0609 5.42143 11.0783 6.17157 11.8284C6.92172 12.5786 7.93913 13 9 13Z" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </i>
+            </div>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="ui left icon input">
+              <input type="password" name="password" placeholder="**************">
+              <i class="icon custom-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9C17 8.46957 16.7893 7.96086 16.4142 7.58579C16.0391 7.21071 15.5304 7 15 7" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.514 13.862C17.7649 14.404 16.9006 14.7655 15.9887 14.9184C15.0768 15.0712 14.1419 15.0112 13.257 14.743L13 15L11.293 16.707C11.1055 16.8946 10.8512 17 10.586 17H10C9.73478 17 9.48043 17.1054 9.29289 17.2929C9.10536 17.4805 9 17.7348 9 18C9 18.2653 8.89464 18.5196 8.70711 18.7071C8.51957 18.8947 8.26522 19 8 19C7.73478 19 7.48043 19.1054 7.29289 19.2929C7.10536 19.4805 7 19.7348 7 20C7 20.2653 6.89464 20.5196 6.70711 20.7071C6.51957 20.8947 6.26522 21 6 21H4C3.73478 21 3.48043 20.8947 3.29289 20.7071C3.10536 20.5196 3 20.2653 3 20V17.414C3.00006 17.1488 3.10545 16.8945 3.293 16.707L9 11L9.257 10.743C8.93681 9.68841 8.91331 8.56596 9.18906 7.49885C9.46481 6.43173 10.0292 5.4612 10.8202 4.69372C11.6113 3.92624 12.5984 3.39147 13.6734 3.1481C14.7483 2.90473 15.8696 2.96215 16.914 3.31407C17.9585 3.66599 18.8858 4.29881 19.5943 5.14308C20.3028 5.98736 20.7651 7.01048 20.9304 8.10018C21.0957 9.18988 20.9576 10.3041 20.5314 11.3205C20.1051 12.3369 19.4071 13.2162 18.514 13.862Z" stroke="#767676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </i>
+            </div>
+          </div>
+          <div class="fluid ui submit positive button">Login</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>

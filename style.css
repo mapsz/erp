@@ -142,3 +142,8 @@ body .ui {
   text-decoration: underline;
   cursor: pointer !important;
 }
+
+.custom-icon {
+  display: grid !important;
+  place-items: center !important;
+}

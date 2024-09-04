@@ -185,3 +185,7 @@ body .ui {
 .form-card .form-header, .form-table th{
   background-color: #E0E1E2 !important;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}

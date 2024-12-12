@@ -199,3 +199,13 @@ body .ui {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.pagination-container .ui.menu{
+  box-shadow: unset;
+}
+
+.pagination-container .pagination-input{
+  height: 36px;
+  vertical-align: top;
+  width: 90px;
+}

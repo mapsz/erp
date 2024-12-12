@@ -473,7 +473,7 @@
                       <th>
                         <div class="ui left floated compact segment" style="display: flex;">
                           <div class="ui fitted checkbox">
-                            <input type="checkbox">
+                            <input type="checkbox" class="table-select-all">
                             <label></label>
                           </div>
                           <div class="ui dropdown">
@@ -517,7 +517,7 @@
                   <tbody>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>983475612.24</td>
                       <td>6582934</td>
@@ -553,7 +553,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>248912347.56</td>
                       <td>3748192</td>
@@ -589,7 +589,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>135791113.78</td>
                       <td>9823756</td>
@@ -625,7 +625,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>429137822.45</td>
                       <td>5493021</td>
@@ -661,7 +661,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>987654321.00</td>
                       <td>8437165</td>
@@ -697,7 +697,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>624139573.12</td>
                       <td>2819367</td>
@@ -733,7 +733,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="checkbox" name="example">
+                        <input type="checkbox" class="table-select">
                       </td>
                       <td>531975321.34</td>
                       <td>9102734</td>
@@ -818,6 +818,14 @@
         $(this).parent().find(".edit-row-input").toggle()
         $(this).parent().find(".edit-row-confirm-button").toggle()
         $(this).parent().find(".edit-row-close-button").toggle()
+      });
+
+      $('.table-select-all').change(function() {
+        $('.table-select').prop('checked', $(this).is(':checked'));
+      });
+      $('.table-select').change(function() {
+          const allChecked = $('.table-select').length === $('.table-select:checked').length;
+          $('.table-select-all').prop('checked', allChecked);
       });
     });
   </script>

@@ -98,6 +98,28 @@
           <a class="item">
             Messages
           </a>
+
+          <!-- Accordion -->
+          <div class="ui item">
+            <div class="ui accordion">
+              <div class="title">
+                <i class="dropdown icon"></i>
+                Accordion
+              </div>
+              <div class="content">
+                <a class="item">
+                  item 3
+                </a>
+                <a class="item">
+                  item 2
+                </a>
+                <a class="item">
+                  item 1
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div class="ui dropdown item">
             More
             <i class="dropdown icon"></i>
@@ -777,6 +799,9 @@
 
   <script>
     $(document).ready(() => {
+      $('.ui.accordion')
+        .accordion()
+      ;
       $('.ui.dropdown')
         .dropdown()
       ;

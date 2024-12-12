@@ -122,6 +122,16 @@ body .ui {
   width: 250px !important;
 }
 
+#left-menu .ui.accordion>.title {
+  color: rgba(255, 255, 255, .9);
+}
+
+#left-menu .ui.accordion .title>.dropdown.icon {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+}
+
 .hidden {
   transform: translateX(-300px);
 }

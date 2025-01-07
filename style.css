@@ -144,6 +144,10 @@ body .ui {
   width: 100% !important;
 }
 
+.w-input-100, .w-input-100 input, .w-input-100 textarea{
+  width: 100% !important;
+}
+
 .p-0 {
   padding: 0px !important;
 }

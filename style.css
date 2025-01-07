@@ -108,18 +108,17 @@ body .ui {
 }
 
 .main-content{
-  transition: transform 0.5s ease;
+  transition: width 0.5s ease;
   width: calc(100% - 280px);
 }
 
 #left-menu.hidden + .main-content {
-  transform: translateX(-150px);
-  width: calc(100% - 40px);
+  width: calc(100% - 40px) !important;
 }
 
 #left-menu {
-  transition: transform 0.5s ease;
-  width: 250px !important;
+  transition: width 0.5s ease, transform 0.5s ease;
+  width: 250px;
 }
 
 #left-menu .ui.accordion>.title {
@@ -134,6 +133,7 @@ body .ui {
 
 .hidden {
   transform: translateX(-300px);
+  width: 0px !important;
 }
 
 .d-flex {

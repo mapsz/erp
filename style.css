@@ -189,3 +189,40 @@ body .ui {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.list-seetings-button{
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+/* Modal draggable list */
+.draggable-item {
+  transition: all 0.2s ease;
+}
+
+.draggable-item:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.sortable-ghost {
+  opacity: 0.4;
+  background: #e0e1e2 !important;
+}
+
+.sortable-chosen {
+  background: #fff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sortable-drag {
+  opacity: 0.8;
+}
+
+.drag-handle-modal {
+  color: #999;
+  user-select: none;
+}
+
+.drag-handle-modal:hover {
+  color: #333;
+}

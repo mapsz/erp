@@ -347,131 +347,132 @@
                     </div>
                   </div>
 
-                </div>
-              </div>
-            </div>
+                  <div style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+                    <script>
+                      // Example table settings data
+                      let data = {
+                        keys: [
+                          { key: 'employee_name', label: 'Employee Name', active: true },
+                          { key: 'comments', label: 'Comments', active: true },
+                          { key: 'age', label: 'Age', active: true },
+                          { key: 'job_title', label: 'Job Title', active: true },
+                          { key: 'department', label: 'Department', active: true },
+                          { key: 'location', label: 'Location', active: true },
+                          { key: 'years_of_experience', label: 'Years of Experience', active: true },
+                          { key: 'education_level', label: 'Education Level', active: true },
+                          { key: 'salary', label: 'Salary', active: true },
+                          { key: 'employment_status', label: 'Employment Status', active: true },
+                          { key: 'email', label: 'Email', active: true },
+                          { key: 'phone_number', label: 'Phone Number', active: true },
+                          { key: 'supervisor', label: 'Supervisor', active: true },
+                          { key: 'skills', label: 'Skills', active: true },
+                          { key: 'certifications', label: 'Certifications', active: true },
+                          { key: 'languages', label: 'Languages', active: true },
+                          { key: 'performance_rating', label: 'Performance Rating', active: true },
+                          { key: 'team', label: 'Team', active: true },
+                          { key: 'project', label: 'Project', active: true },
+                          { key: 'hire_date', label: 'Hire Date', active: true },
+                          { key: 'last_review_date', label: 'Last Review Date', active: true },
+                        ]
+                      };
+                    </script>
 
-            <div class="d-flex justify-content-end" style="margin-bottom: 10px; margin-top: 10px;">
-              <script>
-                // Example table settings data
-                let data = {
-                  keys: [
-                    { key: 'employee_name', label: 'Employee Name', active: true },
-                    { key: 'comments', label: 'Comments', active: true },
-                    { key: 'age', label: 'Age', active: true },
-                    { key: 'job_title', label: 'Job Title', active: true },
-                    { key: 'department', label: 'Department', active: true },
-                    { key: 'location', label: 'Location', active: true },
-                    { key: 'years_of_experience', label: 'Years of Experience', active: true },
-                    { key: 'education_level', label: 'Education Level', active: true },
-                    { key: 'salary', label: 'Salary', active: true },
-                    { key: 'employment_status', label: 'Employment Status', active: true },
-                    { key: 'email', label: 'Email', active: true },
-                    { key: 'phone_number', label: 'Phone Number', active: true },
-                    { key: 'supervisor', label: 'Supervisor', active: true },
-                    { key: 'skills', label: 'Skills', active: true },
-                    { key: 'certifications', label: 'Certifications', active: true },
-                    { key: 'languages', label: 'Languages', active: true },
-                    { key: 'performance_rating', label: 'Performance Rating', active: true },
-                    { key: 'team', label: 'Team', active: true },
-                    { key: 'project', label: 'Project', active: true },
-                    { key: 'hire_date', label: 'Hire Date', active: true },
-                    { key: 'last_review_date', label: 'Last Review Date', active: true },
-                  ]
-                };
-              </script>
-
-              <!-- Settings Modal Button -->
-              <button class="ui primary button" onclick="$('#settings-modal').modal('show');">
-                <div class="list-seetings-button">
-                  🔧
-                </div>
-              </button>
-
-              <!-- Settings Modal -->
-              <div id="settings-modal" class="ui modal">
-                <i class="close icon"></i>
-                <div class="header">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span>Table Settings</span>
-                    <button class="ui primary button" onclick="tableSettingsSave()">
-                      Save Changes
+                    <!-- Settings Modal Button -->
+                    <button class="ui primary button" onclick="$('#settings-modal').modal('show');">
+                      <div class="list-seetings-button">
+                        🔧
+                      </div>
                     </button>
-                  </div>
-                </div>
 
-                <div class="content">
-                    <form class="table-settings-form">
-                      <div class="draggable-list-container" style="max-height: 400px; overflow-y: auto; overflow-x: hidden; padding-right: 10px;">
-                        <div id="draggable-list" class="draggable-list">
-                            <script>
-                              data.keys.forEach((k, i) => {
-                                document.write(`
-                                  <div class="draggable-item table-settings-item" data-id="${i}" style="margin-bottom: 10px; padding: 10px; background: #f9fafb; border: 1px solid #d4d4d5; border-radius: 4px;">
-                                    <div class="d-flex" style="align-items: center;">
-                                      <span class="drag-handle-modal" style="cursor: move; margin-right: 15px; font-size: 16px;">☰</span>
-                                      <div class="" style="cursor: pointer; flex: 1;">
-                                        <div class="ui toggle checkbox">
-                                          <input type="checkbox" ${k.active ? 'checked' : ''} name="${k.key}">
-                                          <label for="modal-checkbox-${i}">${k.label != undefined ? k.label : k.key}</label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                `);
-                              });
-                            </script>
+                    <!-- Settings Modal -->
+                    <div id="settings-modal" class="ui modal">
+                      <i class="close icon"></i>
+                      <div class="header">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span>Table Settings</span>
+                          <button class="ui primary button" onclick="tableSettingsSave()">
+                            Save Changes
+                          </button>
                         </div>
                       </div>
-                    </form>
-                </div>
 
-                <div class="actions">
-                  <button class="ui primary button" onclick="tableSettingsSave()">
-                    Save Changes
-                  </button>
-                  <button class="ui cancel button">
-                    Cancel
-                  </button>
+                      <div class="content">
+                          <form class="table-settings-form">
+                            <div class="draggable-list-container" style="max-height: 400px; overflow-y: auto; overflow-x: hidden; padding-right: 10px;">
+                              <div id="draggable-list" class="draggable-list">
+                                  <script>
+                                    data.keys.forEach((k, i) => {
+                                      document.write(`
+                                        <div class="draggable-item table-settings-item" data-id="${i}" style="margin-bottom: 10px; padding: 10px; background: #f9fafb; border: 1px solid #d4d4d5; border-radius: 4px;">
+                                          <div class="d-flex" style="align-items: center;">
+                                            <span class="drag-handle-modal" style="cursor: move; margin-right: 15px; font-size: 16px;">☰</span>
+                                            <div class="" style="cursor: pointer; flex: 1;">
+                                              <div class="ui toggle checkbox">
+                                                <input type="checkbox" ${k.active ? 'checked' : ''} name="${k.key}">
+                                                <label for="modal-checkbox-${i}">${k.label != undefined ? k.label : k.key}</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      `);
+                                    });
+                                  </script>
+                              </div>
+                            </div>
+                          </form>
+                      </div>
+
+                      <div class="actions">
+                        <button class="ui primary button" onclick="tableSettingsSave()">
+                          Save Changes
+                        </button>
+                        <button class="ui cancel button">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+
+                    <script>
+                      function tableSettingsSave() {
+                        const serialized = $('.table-settings-form').serializeArray();
+                        console.log('jQuery serializeArray:', serialized);
+
+                        // Send data to server or process it as needed
+                        $.post('/save-table-settings', { settings: serialized }, function(response) {
+                          console.log('Server response:', response);
+                        });
+                        $('#settings-modal').modal('hide');
+                      }
+
+                      // Initialize Sortable.js for modal list
+                      var el = document.getElementById('draggable-list');
+                      if (el) {
+                        var sortable = Sortable.create(el, {
+                          animation: 150,
+                          handle: '.drag-handle-modal',
+                          ghostClass: 'sortable-ghost',
+                          chosenClass: 'sortable-chosen',
+                          dragClass: 'sortable-drag',
+                          onEnd: function (evt) {
+                            // Update the data array order
+                            var item = data.keys.splice(evt.oldIndex, 1)[0];
+                            data.keys.splice(evt.newIndex, 0, item);
+                          }
+                        });
+                      }
+
+                      // Initialize checkboxes in modal
+                      $('#settings-modal').on('shown.bs.modal', function () {
+                        $('.ui.checkbox').checkbox();
+                      });
+
+                    </script>
+                  </div>
+
                 </div>
               </div>
-
-              <script>
-                function tableSettingsSave() {
-                  const serialized = $('.table-settings-form').serializeArray();
-                  console.log('jQuery serializeArray:', serialized);
-
-                  // Send data to server or process it as needed
-                  $.post('/save-table-settings', { settings: serialized }, function(response) {
-                    console.log('Server response:', response);
-                  });
-                  $('#settings-modal').modal('hide');
-                }
-
-                // Initialize Sortable.js for modal list
-                var el = document.getElementById('draggable-list');
-                if (el) {
-                  var sortable = Sortable.create(el, {
-                    animation: 150,
-                    handle: '.drag-handle-modal',
-                    ghostClass: 'sortable-ghost',
-                    chosenClass: 'sortable-chosen',
-                    dragClass: 'sortable-drag',
-                    onEnd: function (evt) {
-                      // Update the data array order
-                      var item = data.keys.splice(evt.oldIndex, 1)[0];
-                      data.keys.splice(evt.newIndex, 0, item);
-                    }
-                  });
-                }
-
-                // Initialize checkboxes in modal
-                $('#settings-modal').on('shown.bs.modal', function () {
-                  $('.ui.checkbox').checkbox();
-                });
-
-              </script>
             </div>
+
 
             <div class="ui scrolling fluid container" style="max-height: none; overscroll-behavior: auto; margin-bottom: 30px;">
               <table class="ui celled table">

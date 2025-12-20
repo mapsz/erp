@@ -112,7 +112,7 @@ body .ui {
   width: calc(100% - 280px);
 }
 
-#left-menu.hidden + .main-content {
+#left-menu.hidden + .main-content, body:not(:has(#left-menu)) .main-content {
   width: calc(100% - 40px) !important;
 }
 

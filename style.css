@@ -267,3 +267,20 @@ body .ui {
 .drag-handle-modal:hover {
   color: #333;
 }
+
+.ui.vertical.menu .spoiler.item>.spoiler-caption>i.icon {
+  float: right;
+  content: "\f0da";
+  margin-left: 1em;
+  margin-right: 0px;
+}
+
+.ui.vertical.menu .spoiler.item>.menu {
+  display: none;
+}
+
+.ui.inverted.menu .spoiler.item:hover {
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+  cursor: pointer;
+}

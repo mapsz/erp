@@ -289,13 +289,26 @@
             </form>
 
             <div class="ui grid">
-              <div class="four wide column middle aligned">
-                <div class="ui primary button">
-                  Add new
-                </div>
+              <div class="five wide column middle aligned">
+
+                <div class="d-flex">
+
+                  <div class="d-flex" style="gap: 10px;">
+                    <select class="ui compact dropdown" id="bulk-actions-select">
+                      <option value="">Actions</option>
+                      <option value="delete">Delete</option>
+                      <option value="add">Add</option>
+                    </select>
+                    <button class="ui basic primary small button">Apply</button>
+                  </div>
+
+                  <div class="ui primary button" style="margin-left: 10px">
+                    Add new
+                  </div>
+              </div>
               </div>
 
-              <div class="twelve wide column">
+              <div class="eleven wide column">
                 <div class="d-flex align-items-center justify-content-end">
                   <div class="ui secondary menu no-padding-menu" style="margin-bottom: 0px;">
                     <div class="right menu">
@@ -378,10 +391,8 @@
                     </script>
 
                     <!-- Settings Modal Button -->
-                    <button class="ui primary button" onclick="$('#settings-modal').modal('show');">
-                      <div class="list-seetings-button">
-                        🔧
-                      </div>
+                    <button class="ui small primary button button-with-icon" onclick="$('#settings-modal').modal('show');">
+                        <i class="wrench icon m-0"></i>
                     </button>
 
                     <!-- Settings Modal -->
